@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="sessao-superior">
+            <div class="faixa-preta">
+                <div class="logo">
+                    <img src="src/imagens/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="sessao-central">
+
+            <div class="sessao-central-cabecario">
+
+                <div class="sessao-central-cabecario-esquerdo">
+
+                    <div class="sessao-input">
+                        <span class="titulo">Altura</span>
+                        <div class="container-input">
+                            <input type="number" min="1" max="290" id="altura" placeholder="000"/>
+                            <span class="unidade">M&nbsp;&nbsp;</span>
+                        </div>
+                    </div>
+
+                    <div class="sessao-input">
+                        <span class="titulo">Peso</span>
+                        <div class="container-input">
+                            <input type="number" min="1" max="350" id="peso" placeholder="000"/>
+                            <span class="unidade">KG</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="sessao-central-cabecario-direito">
+
+                    <div class="container-radio">
+                        <input class="radio-sexo" id="masc" type="radio" name="sexo" value="M"> 
+                        <label for="masc">Masculino</label> 
+                    </div>
+
+                    <div class="container-radio">
+                        <input class="radio-sexo" id="femi" type="radio" name="sexo" value="F" checked> 
+                        <label for="femi">Feminino</label>
+                    </div>
+ 
+                </div>
+
+            </div>
+
+            <div class="sessao-central-rodape">
+                <div class="faixa-preta">
+                    <button type="submit" id="btnCalcular" onclick="calcular_imc()">Calcular</button> 
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sessao-inferior">
+            <div class="sessao-inferior-esqueda">
+                <div id="container-imagem">
+                    <img src="src/imagens/pessoa-00.png" id="imagem-pessoa" alt="" >
+                </div>
+                <div id="container-grau-imc">
+                    <h3 class="grau-imc" id="grau-imc">*** ? ***</h3>
+                </div>
+            </div>
+
+            <div class="sessao-inferior-direita">
+                <h3 class="texto-imc">IMC</h3>
+                <div class="container-imc">
+                    <h3 class="valor-imc" id="valor-imc">?</h3>
+                </div>
+                <div class="faixas-de-imc">
+                    <div class="faixas-de-imc-linha" id="faixa-imc-01">
+                        <span class="margin-esquerda">&lt;</span>
+                        <span class="margin-direita">17</span>
+                    </div>
+                    <div class="faixas-de-imc-linha" id="faixa-imc-02">
+                        <span class="margin-esquerda">17</span>
+                        <span>-</span>
+                        <span class="margin-direita">18</span>
+                    </div>
+                    <div class="faixas-de-imc-linha" id="faixa-imc-03">
+                        <span class="margin-esquerda">18.5</span>
+                        <span>-</span>
+                        <span class="margin-direita">24</span>
+                    </div>
+                    <div class="faixas-de-imc-linha" id="faixa-imc-04">
+                        <span class="margin-esquerda">25</span>
+                        <span>-</span>
+                        <span class="margin-direita">29</span>
+                    </div>
+                    <div class="faixas-de-imc-linha" id="faixa-imc-05">
+                        <span class="margin-esquerda">30</span>
+                        <span>-</span>
+                        <span class="margin-direita">34</span>
+                    </div>
+                    <div class="faixas-de-imc-linha" id="faixa-imc-06">
+                        <span class="margin-esquerda">35</span>
+                        <span>-</span>
+                        <span class="margin-direita">39</span>
+                    </div>
+                    <div class="faixas-de-imc-linha"  id="faixa-imc-07">
+                        <span class="margin-esquerda">&gt;</span>
+                        <span class="margin-direita">40</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>

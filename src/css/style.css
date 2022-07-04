@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+/*---------- GERAL ----------*/
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Carter One', cursive;
+}
+
+body{
+    background-color: #1f252e;
+}
+
+.container{
+    display: flex;
+    min-width: 320px;
+    height: calc(100vh - 60px);
+    margin-top: 5px;
+    align-items: center;
+    background-color: #1f252e;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/*---------- SESSÃO SUPERIOR ----------*/
+
+.sessao-superior{
+    width: 100%;
+    height: 70px;
+    background-color: #f0ce12;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.sessao-superior .faixa-preta{
+    width: 100%;
+    height: 40px;
+    background-color: #1f252e;
+    align-self: center; 
+    display: flex;
+    border-top: 3px solid #f0ce12;
+    border-bottom: 3px solid #f0ce12;
+    outline: 0.3rem solid #1f252e;
+    align-items: center;
+}
+
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.logo img{
+    width: 70px;
+}
+
+/*---------- SESSÃO CENTRAL ----------*/
+
+.sessao-central{
+    width: 320px;
+    height: 170px;
+    border-radius: 0px 0px 30px 30px;
+    background-color: #f0ce12;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*---------- SESSÃO CENTRAL - CABEÇÁRIO ----------*/
+
+.sessao-central-cabecario{
+    display: flex;
+}
+
+.sessao-central-cabecario-esquerdo{
+    width: 45%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+
+.sessao-central-cabecario-direito{
+    width: 55%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-radio{
+    display: flex;
+    width: 100%;
+    font-size: 20px;
+    margin: 11px 0px 0px 0px;
+    color:#1f252e;
+}
+
+.radio-sexo{
+    width: 30px;
+}
+
+.radio-sexo:hover{
+    cursor: pointer;
+}
+
+label:hover{
+    cursor: pointer;
+}
+
+.sessao-input{
+    min-width: 30%;
+    height: 45px;
+    top:-10px;
+    position: relative;
+}
+
+.titulo{
+    margin-left: 10px;
+    position: relative;
+    top:10px;
+    font-size: 13px;
+    color: #1f252e;
+}
+
+.container-input{
+    width: 100%;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.151);
+    display: flex;
+}
+
+input{
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 23px;
+    text-align: end;
+    border: 0;
+    outline: 0;
+    color:#1f252e;
+}
+
+.unidade{
+    margin-right: 10px;
+    position: relative;
+    top:5px;
+    font-size: 18px;
+    color:#1f252e;
+}
+
+/*---------- SESSÃO CENTRAL - RODAPÉ ----------*/
+
+.sessao-central-rodape{
+    width: 100%;
+    height: 55px; 
+    display: flex; 
+}
+
+.sessao-central-rodape .faixa-preta {
+    width: 100%;
+    height: 20px;
+    margin-top: 12px;
+    background-color: #1f252e;
+    display: flex;
+    border-top: 3px solid #f0ce12;
+    border-bottom: 3px solid #f0ce12;
+    outline: 0.3rem solid #1f252e;
+    align-items: center;
+    justify-content: center;
+}
+
+#btnCalcular{
+    color:#f0ce12;
+    background-color: rgba(31, 37, 46, 0);
+    border: none;
+    font-size: 20px;
+    letter-spacing: 3px;
+    
+}
+
+#btnCalcular:hover{
+    cursor: pointer;
+}
+
+#btnCalcular:active{
+    transform: scale(0.7); 
+  }
+
+/*---------- SESSÃO INFERIOR ----------*/
+
+.sessao-inferior{
+    width: 320px;
+    height: 300px;
+    display: flex;
+  }
+
+.sessao-inferior-esqueda{
+    width: 47%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#container-imagem{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px 30px 5px 30px;
+    margin-bottom: 5px;
+    background-color: #f0ce12;
+}
+
+#container-grau-imc{
+    width: 100%;
+    height:25%;
+    border-radius: 5px 5px 5px 30px;
+    margin-bottom: 5px;
+    background-color: #f0ce12;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grau-imc{
+    font-size: 20px;
+    text-align: center;
+    color: #1f252e;
+    line-height: 22px;
+    font-weight: normal;
+}
+
+.sessao-inferior img{
+   height: 220px;
+   display: flex;
+   position: relative;
+   top:-45px;
+}
+
+
+/*---------- SESSÃO INFERIOR - DIREITA ----------*/
+
+.sessao-inferior-direita{
+    width: 53%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-imc{
+    color: #f0ce12;
+    font-size:25px ;
+    letter-spacing: 4px;
+}
+
+.container-imc{
+    width: 90%;
+    height: 50px;
+    background-color: #f0ce12;
+    border-radius: 5px 90px 5px 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.valor-imc{
+    font-size: 24px;
+    color: #1f252e;
+}
+
+.faixas-de-imc{
+    width: 90%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.faixas-de-imc-linha{
+    width: 80%;
+    height: 25px;
+    color: #f0ce12;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    margin:1.5px 0px;
+    border-radius: 15px;
+}
+
+.margin-esquerda{
+    margin-left: 10px;
+    width: 40px;   
+}
+
+.margin-direita{
+    margin-right: 10px;
+}
+
+.faixa-selecionada{
+    background-color: #f0ce12;
+    color: #1f252e;
+}
+
+/*---------- ALTERAÇÕES CONFORME RESOLUÇÃO DA TELA (MEDIA QUERY) ----------*/
+
+/* 320px - 480px = mobile */
+/* Em mobile first não precisa de MQ */
+
+/* 480px - 768px = tablet */
+@media (min-width: 480px) {
+    .sessao-central {width: 380px;}
+    .sessao-inferior {width: 380px;}
+  }
+  
+  /* 768px - 1024px = telas menores, laptops */
+  @media (min-width: 768px) {
+    .sessao-central {width: 440px;}
+    .sessao-inferior {width: 440px;}
+  }
+  
+  /* 1024px - 1200px = desktop */
+  @media (min-width: 1024px) {
+    .sessao-central {width: 500px;}
+    .sessao-inferior {width: 500px;}
+  }
+  
+  /* 1200 e + = telas maiores, tvs */
+  @media (min-width: 1200px) {
+    .sessao-central {width: 560px;}
+    .sessao-inferior {width: 560px;}
+  }
+
+  /* orientação de tela: Horizontal*/
+  @media (orientation: landscape){
+    .container {
+        height: 100vh;
+        margin-top: 0px;
+        justify-content: center;
+    }
+    .sessao-superior {
+        display: none;
+    }
+    .sessao-central {
+        width: 600px;
+        height: 90px;
+        border-radius: 30px 30px 0px 0px;
+        margin-bottom: 0px;
+        margin-top: 5px;
+    }
+    .sessao-central-cabecario {
+        height: 50px;
+    }
+    .sessao-central-cabecario-esquerdo {
+        width: 50%;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+        justify-content: space-evenly;
+    }
+    .sessao-input {
+        height: auto;
+        top: -7px;
+    }
+    .sessao-central-cabecario-direito {
+        width: 50%;
+        flex-direction: row;
+        height: 100%;
+    }
+    .sessao-central-rodape {
+        height: 40px;
+    }
+    .sessao-inferior {
+        height: 260px;
+    }
+    .sessao-inferior img {
+        height: 200px;
+    }
+    .texto-imc {
+        font-size: 18px;
+    }
+    .container-imc {
+        height: 23px;
+    }
+    
+}
